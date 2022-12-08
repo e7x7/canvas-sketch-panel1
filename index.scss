@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	//font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Syne', sans-serif;
+
+	cursor: cell;
+	color-scheme: light dark;
+
+	color: #e7e7e7;
+	background-color: #000707;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+h1 {
+	padding: 0px 21px;
+	position: absolute;
+	top: 7px;
+	color: #e7e7e777;
+	//letter-spacing: 1px;
+	font-weight: 900;
+}
+canvas {
+	//border: 1px solid red;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.tp-dfwv {
+	--tp-base-background-color: hsla(0, 0%, 10%, 0.76);
+	//--tp-base-shadow-color: #7fffff44;
+	--tp-container-foreground-color: hsl(0, 0%, 100%);
+
+	position: absolute;
+	//top: 0;
+	margin-right: 7px;
+}
