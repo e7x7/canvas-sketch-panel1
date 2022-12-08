@@ -1,5 +1,5 @@
 https://sketching-panel.vercel.app/  
-  ✧☆༓w♡w༓☆✧
+  ✧☆༓w♡w༓☆✧  
 noise sketching panel controlled by simplex noise.  
 based on Bruno Imbrizi's 'Creative Coding' course on Domestika.  
   
