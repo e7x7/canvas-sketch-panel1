@@ -89,7 +89,7 @@ const sketch = () => {
 
 const createPane = () => {
   const pane = new Pane();
-  //const pane = new Pane({ container: document.getElementBy('paneContainer') },);
+  //const pane = new Pane({ container: document.getElementById('paneContainer') },);
 
   let folder;
   //___Style
