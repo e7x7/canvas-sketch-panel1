@@ -92,19 +92,25 @@ const createPane = () => {
   //const pane = new Pane({ container: document.getElementById('paneContainer') },);
 
   let folder;
+  //let controls
+  //controls = pane.addFolder({ title: 'controls', expanded: false })
+  //____________________________________________
   //___Style
   folder = pane.addFolder({ title: 'Style', expanded: false });
-  //______________________________________________________
-  folder.addInput(params, 'background', { r: 255, g: 127, b: 0 });
-  folder.addInput(params, 'color', { r: 255, g: 127, b: 0 });
+  //
+  folder.addInput(params, 'background'/*, { view: 'color', expanded: false, picker: 'inline' }*/);
+
+  folder.addInput(params, 'color');
+  //
   folder.addInput(params, 'lineCap', {
     options: { razor: 'razor', round: 'round', square: 'square' },
   });
   folder.addInput(params, 'shadowBlur', { min: 0, max: 100 });
-  folder.addInput(params, 'shadowColor', { r: 255, g: 127, b: 0 });
+  folder.addInput(params, 'shadowColor');
+  //____________________________________________
   //___Grid
   folder = pane.addFolder({ title: 'Grid', expanded: false });
-  //______________________________________________________
+  //
   folder.addInput(params, 'cols', { min: 1, max: 100, step: 1 });
   folder.addInput(params, 'rows', { min: 1, max: 100, step: 1 });
   folder.addInput(params, 'scaleMin', { min: 0.07, max: 100 });
@@ -112,9 +118,10 @@ const createPane = () => {
 
   folder.addInput(params, 'cellwidth', { min: 0.1, max: 10, step: 0.001 });
   folder.addInput(params, 'cellheight', { min: -10, max: 10, step: 0.001 });
+  //____________________________________________
   //___Noise
   folder = pane.addFolder({ title: 'Noise', expanded: false });
-  //______________________________________________________
+  //
   folder.addInput(params, 'nois_frqncy', {
     min: -0.01,
     max: 0.01,
